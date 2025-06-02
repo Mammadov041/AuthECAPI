@@ -1,4 +1,4 @@
-# IdentityService API
+# AuthEC API
 
 A minimal ASP.NET Web API for handling user authentication using JWT (JSON Web Token). This project includes basic login and registration functionality via ASP.NET Core Identity, along with two custom `POST` endpoints defined directly in the `Program.cs` file.
 
@@ -30,7 +30,7 @@ A minimal ASP.NET Web API for handling user authentication using JWT (JSON Web T
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/IdentityService.git
+   git clone https://github.com/your-username/AuthECAPI.git
    cd IdentityService
 
 2. **Restore dependencies and run migrations:**
@@ -44,3 +44,4 @@ A minimal ASP.NET Web API for handling user authentication using JWT (JSON Web T
    he API should be running on https://localhost:5001 or a similar port.![authECAPI](https://github.com/user-attachments/assets/65f937d5-1fa9-4b52-8460-a0efe26b5ac3)
 
    
+![authECAPI](https://github.com/user-attachments/assets/2ba2ad0c-4f1d-48ce-948d-1b6f1131d9a1)
