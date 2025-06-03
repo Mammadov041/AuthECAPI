@@ -1,37 +1,41 @@
-# AuthEC API
+# AuthEC API Updated
 
-A minimal ASP.NET Web API for handling user authentication using JWT (JSON Web Token). This project includes basic login and registration functionality via ASP.NET Core Identity, along with two custom `POST` endpoints defined directly in the `Program.cs` file.
+A clean and minimal ASP.NET Web API for handling user authentication using JWT (JSON Web Token). This project uses ASP.NET Core Identity for user management and follows modern best practices including separation of concerns, extension methods for setup, and `IOptions<T>` for configuration.
 
-## Features
+## ✨ Features
 
-- User registration and login using ASP.NET Identity
+- User registration and login via ASP.NET Core Identity
 - JWT-based authentication
+- Clean architecture with zero logic in `Program.cs`
+- All setup logic moved to `IServiceCollection` and `WebApplication` extension methods
+- Application settings managed via strongly-typed `IOptions<T>` injection
 - Minimal API structure using ASP.NET Core 8+
-- Two additional custom endpoints in `Program.cs`
 
-## Technologies Used
+## 🛠️ Technologies
 
 - ASP.NET Core 8
-- ASP.NET Identity
+- ASP.NET Core Identity
 - JWT Bearer Authentication
 - Entity Framework Core
 - SQLite / SQL Server (or your preferred DB)
+- Dependency Injection with `IOptions<T>`
+- Clean architecture principles
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
-- Visual Studio or VS Code
-- Optional: Docker (if containerizing)
+- Visual Studio 2022+ or VS Code
+- Optional: Docker (for containerized deployment)
 
 ### Setup
 
-1. **Clone the repository:**
+1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/AuthECAPI.git
-   cd IdentityService
+   git clone https://github.com/your-username/AuthECAPIUpdated.git
+   cd AuthECAPIUpdated
 
 2. **Restore dependencies and run migrations:**
    ```
