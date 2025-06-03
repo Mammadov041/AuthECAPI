@@ -1,41 +1,37 @@
-# AuthEC API Updated
+# AuthECAPI (Flat Program.cs Version)
 
-A clean and minimal ASP.NET Web API for handling user authentication using JWT (JSON Web Token). This project uses ASP.NET Core Identity for user management and follows modern best practices including separation of concerns, extension methods for setup, and `IOptions<T>` for configuration.
+A minimal ASP.NET Web API for user authentication using JWT, where all service registrations, middleware configurations, and application logic are written directly in `Program.cs`. This version avoids using extension methods or extra abstraction layers for maximum transparency and simplicity.
 
-## ✨ Features
+## 🔐 Features
 
-- User registration and login via ASP.NET Core Identity
-- JWT-based authentication
-- Clean architecture with zero logic in `Program.cs`
-- All setup logic moved to `IServiceCollection` and `WebApplication` extension methods
-- Application settings managed via strongly-typed `IOptions<T>` injection
-- Minimal API structure using ASP.NET Core 8+
+- ASP.NET Core Identity for user management
+- JWT (JSON Web Token) for authentication
+- All logic in a single `Program.cs` file
+- Minimal API endpoints for login and registration
+- Entity Framework Core for data persistence
 
-## 🛠️ Technologies
+## 🧰 Technologies Used
 
 - ASP.NET Core 8
-- ASP.NET Core Identity
-- JWT Bearer Authentication
+- ASP.NET Identity
 - Entity Framework Core
-- SQLite / SQL Server (or your preferred DB)
-- Dependency Injection with `IOptions<T>`
-- Clean architecture principles
+- JWT Bearer Authentication
+- SQLite / SQL Server (or your choice of DB)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
-- Visual Studio 2022+ or VS Code
-- Optional: Docker (for containerized deployment)
+- Visual Studio or VS Code
 
-### Setup
+### Setup Instructions
 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/AuthECAPIUpdated.git
-   cd AuthECAPIUpdated
+   git clone https://github.com/your-username/AuthECAPI.git
+   cd AuthECAPI
 
 2. **Restore dependencies and run migrations:**
    ```
